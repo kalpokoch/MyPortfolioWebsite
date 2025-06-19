@@ -49,9 +49,9 @@ const Experience: React.FC = () => {
                   <h3 className="experience-position">{exp.position}</h3>
                   <div className="experience-company">{exp.company}</div>
                   <div className="experience-meta">
-                    <span className="experience-duration">{exp.duration}</span>
+                    <span className="experience-duration">{exp.duration}</span> 
                     <span className="experience-location">{exp.location}</span>
-                  </div>
+                  </div> 
                 </div>
                 
                 <div className="experience-content">

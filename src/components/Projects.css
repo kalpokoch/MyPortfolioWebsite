@@ -11,6 +11,60 @@
   gap: 30px;
   margin-top: 50px;
 }
+.project-view-link {
+  --c1: #202020;
+  --c2: #00a1b7;
+  --size-letter: 13px;
+
+  padding: 0.1em 0.9em;
+  font-size: var(--size-letter);
+  background-color: transparent;
+  border: calc(var(--size-letter) / 6) solid var(--c2);
+  border-radius: 1.5em;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  transition: 300ms cubic-bezier(0.83, 0, 0.17, 1);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.project-view-link > span {
+  font-weight: 700;
+  color: var(--c2);
+  position: relative;
+  z-index: 1;
+  transition: color 700ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.project-view-link::after {
+  content: "";
+  width: 0;
+  height: calc(300% + 1em);
+
+  position: absolute;
+  translate: -50% -50%;
+  inset: 50%;
+  rotate: 30deg;
+
+  background-color: var(--c2);
+  transition: 1000ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.project-view-link:hover > span {
+  color: var(--c1);
+}
+
+.project-view-link:hover::after {
+  width: calc(120% + 1em);
+}
+
+.project-view-link:active {
+  scale: 0.98;
+  filter: brightness(0.9);
+}
+
 
 .project-card {
   background: var(--secondary-bg);

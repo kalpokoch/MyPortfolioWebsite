@@ -68,6 +68,19 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
                 </div>
+
+                {project.link && (
+                  <div className='project-link'>
+                    <a 
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-view-link"  
+                    >
+                      <span>View Project</span>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

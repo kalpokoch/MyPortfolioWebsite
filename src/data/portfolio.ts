@@ -116,7 +116,8 @@ export const projects: Project[] = [
       "Visually appealing and responsive UI, SEO and mobile optimized",
       "Team collaboration with Git and GitHub version control"
     ],
-    category: "web"
+    category: "web",
+    link: "https://suzocoservices.in/"
   },
   {
     id: "note-taking-app",
