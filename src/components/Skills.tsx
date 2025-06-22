@@ -1,8 +1,10 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { BrainCircuit, Code, Cpu } from 'lucide-react';
 import { skills } from '../data/portfolio';
 import { Skill } from '../types/portfolio';
 import './Skills.css';
+// import { BrainCircuit } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -104,21 +106,21 @@ const Skills: React.FC = () => {
             <h3>Technical Expertise Overview</h3>
             <div className="expertise-highlights">
               <div className="expertise-item">
-                <div className="expertise-icon">🧠</div>
+                <div className="expertise-icon"><BrainCircuit size={28}/></div>
                 <div className="expertise-text">
                   <h4>AI/ML Specialist</h4>
                   <p>Deep Learning, CNN, NLP with practical implementation experience</p>
                 </div>
               </div>
               <div className="expertise-item">
-                <div className="expertise-icon">⚡</div>
+                <div className="expertise-icon"><Code size={28} /></div>
                 <div className="expertise-text">
                   <h4>Full-Stack Developer</h4>
                   <p>Modern web technologies with React, Laravel, and Python</p>
                 </div>
               </div>
               <div className="expertise-item">
-                <div className="expertise-icon">🔧</div>
+                <div className="expertise-icon"><Cpu size={28} /></div>
                 <div className="expertise-text">
                   <h4>IoT Integration</h4>
                   <p>Hardware programming and sensor integration with Arduino</p>
