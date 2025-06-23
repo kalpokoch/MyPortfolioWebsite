@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Mail, Phone, MapPinned} from 'lucide-react';
 import { contactInfo } from '../data/portfolio';
 import './Contact.css';
 
@@ -66,7 +67,7 @@ const Contact: React.FC = () => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <div className="contact-icon">📧</div>
+                <div className="contact-icon text-white"> <Mail size={28}/></div>
                 <div className="contact-text">
                   <label>Email</label>
                   <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
@@ -74,7 +75,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📱</div>
+                <div className="contact-icon text-white"><Phone size={28}/></div>
                 <div className="contact-text">
                   <label>Phone</label>
                   <a href={`tel:${contactInfo.phone}`}>{contactInfo.phone}</a>
@@ -82,7 +83,7 @@ const Contact: React.FC = () => {
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📍</div>
+                <div className="contact-icon text-white"><MapPinned size={28}/></div>
                 <div className="contact-text">
                   <label>Location</label>
                   <span>{contactInfo.location}</span>
