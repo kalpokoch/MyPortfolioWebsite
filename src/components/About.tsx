@@ -2,6 +2,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { professionalSummary } from '../data/portfolio';
 import './About.css';
+import {
+  BrainCog,
+  Cpu,
+  Laptop2,
+  BarChart3
+} from 'lucide-react';
+
 
 const About: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,26 +35,27 @@ const About: React.FC = () => {
 
   const highlights = [
     {
-      icon: '🤖',
+      icon: <BrainCog size={32} color='white'/>,
       title: 'AI/ML Expertise',
       description: 'Deep Learning, CNN, NLP with 75K+ dataset experience'
     },
     {
-      icon: '🔌',
+      icon: <Cpu size={32} color='white' />,
       title: 'IoT Systems',
       description: 'Arduino, sensors, and smart automation solutions'
     },
     {
-      icon: '💻',
+      icon: <Laptop2 size={32} color='white'/>,
       title: 'Full-Stack Development',
       description: 'React, Laravel, Python with modern technologies'
     },
     {
-      icon: '📊',
+      icon: <BarChart3 size={32} color='white' />,
       title: 'Project Leadership',
       description: '3+ years coordinating complex technical projects'
     }
   ];
+
 
   return (
     <section id="about" ref={sectionRef} className="about">
