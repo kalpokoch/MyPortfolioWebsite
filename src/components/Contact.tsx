@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPinned} from 'lucide-react';
+import { Mail, Phone, MapPinned, Github, Linkedin} from 'lucide-react';
 import { contactInfo } from '../data/portfolio';
 import './Contact.css';
 
@@ -98,7 +98,9 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <span className="social-icon">💻</span>
+                <span className="social-icon">
+                <Github size={20}/>  
+                </span>
                 GitHub
               </a>
               <a 
@@ -107,7 +109,9 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                <span className="social-icon">💼</span>
+                <span className="social-icon">
+                  <Linkedin size={20}/>
+                </span>
                 LinkedIn
               </a>
             </div>
