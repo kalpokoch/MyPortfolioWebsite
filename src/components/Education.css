@@ -60,9 +60,15 @@
 
 .education-icon,
 .certification-icon {
-  font-size: 2rem;
-  min-width: 50px;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .education-details,

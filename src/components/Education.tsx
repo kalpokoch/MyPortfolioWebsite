@@ -1,6 +1,8 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { education, certifications } from '../data/portfolio';
+import { GraduationCap, BookOpenCheck, Award } from 'lucide-react';
+
 import './Education.css';
 
 const Education: React.FC = () => {
@@ -44,7 +46,7 @@ const Education: React.FC = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="education-icon">
-                    {edu.type === 'bachelor' ? '🎓' : '📚'}
+                    {edu.type === 'bachelor' ? <GraduationCap size={24} color='white' /> : <BookOpenCheck size={24} color='white'/>}
                   </div>
                   <div className="education-details">
                     <h4 className="education-degree">{edu.degree}</h4>
@@ -68,7 +70,7 @@ const Education: React.FC = () => {
                   className="certification-item"
                   style={{ animationDelay: `${0.3 + index * 0.2}s` }}
                 >
-                  <div className="certification-icon">🏆</div>
+                  <div className="certification-icon"><Award size={24} color='white'/></div>
                   <div className="certification-details">
                     <h4 className="certification-title">{cert.title}</h4>
                     <div className="certification-issuer">{cert.issuer}</div>
