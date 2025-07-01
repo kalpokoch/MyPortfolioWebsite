@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
+import { Calendar, MapPin } from 'lucide-react';
 import { experiences } from '../data/portfolio';
 import './Experience.css';
 
@@ -49,8 +50,14 @@ const Experience: React.FC = () => {
                   <h3 className="experience-position">{exp.position}</h3>
                   <div className="experience-company">{exp.company}</div>
                   <div className="experience-meta">
-                    <span className="experience-duration">{exp.duration}</span> 
-                    <span className="experience-location">{exp.location}</span>
+                    <span className="experience-duration">
+                      <Calendar size={16} className="experience-icon" />
+                      {exp.duration}
+                    </span> 
+                    <span className="experience-location">
+                      <MapPin size={16} className="experience-icon" />
+                      {exp.location}
+                    </span>
                   </div> 
                 </div>
                 

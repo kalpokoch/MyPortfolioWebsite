@@ -136,11 +136,11 @@
 }
 
 .experience-duration::before {
-  content: '📅';
+  content: none;
 }
 
 .experience-location::before {
-  content: '📍';
+  content: none;
 }
 
 .experience-description {
