@@ -140,7 +140,7 @@ export const education: Education[] = [
     degree: "B.Tech in Computer Science and Engineering",
     institution: "Central Institute of Technology Kokrajhar (CIT)",
     duration: "2021 – 2025",
-    grade: "CGPA: 7.21",
+    grade: "CGPA: 7.33",
     type: "bachelor"
   },
   {
