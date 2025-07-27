@@ -18,7 +18,7 @@ export const experiences: JobExperience[] = [
     id: "suzoco-intern",
     company: "SUZOCO",
     position: "Intern",
-    duration: "March 2025 – Present",
+    duration: "March 2025 – June 2025",
     location: "Kokrajhar, Assam",
     description: "Web Development and SaaS products",
     responsibilities: [
