@@ -16,6 +16,19 @@ export const professionalSummary = `AI/ML and IoT Systems professional with 3 ye
 export const experiences: JobExperience[] = [
   {
     id: "suzoco-intern",
+    company: "NIELIT",
+    position: "Intern",
+    duration: "August 2025 – Present",
+    location: "Kokrajhar, Assam",
+    description: "Artificial Intelligence and Machine Learning",
+    responsibilities: [
+      "Working on a MCP(Model Context Protocol) server",
+      // "Collaborated with design and backend teams for dynamic content integration",
+      // "Focused on code modularity, reusability, and optimal load time"
+    ]
+  },
+  {
+    id: "suzoco-intern",
     company: "SUZOCO",
     position: "Intern",
     duration: "March 2025 – June 2025",
@@ -40,6 +53,7 @@ export const experiences: JobExperience[] = [
       "Developed efficient response system using Python and ML techniques"
     ]
   }
+  
 ];
 
 export const skills: Skill[] = [
