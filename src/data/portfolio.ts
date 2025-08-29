@@ -117,7 +117,8 @@ export const projects: Project[] = [
       "Automatic gas leakage detection triggering ventilation fan",
       "IoT hardware integration with real-time decision logic for safety"
     ],
-    category: "iot"
+    category: "iot",
+    github:"https://github.com/kalpokoch/Smart-Home-Automation",
   },
   {
     id: "suzoco-landing",
