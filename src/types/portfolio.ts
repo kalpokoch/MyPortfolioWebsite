@@ -35,6 +35,7 @@ export interface Project {
   highlights: string[];
   category: 'ai-ml' | 'iot' | 'web' | 'mobile';
   link?: string;
+  github?: string;
 }
 
 export interface Education {

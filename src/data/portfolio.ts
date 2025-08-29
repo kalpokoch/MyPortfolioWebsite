@@ -15,7 +15,7 @@ export const professionalSummary = `AI/ML and IoT Systems professional with 3 ye
 
 export const experiences: JobExperience[] = [
   {
-    id: "suzoco-intern",
+    id: "nielit-intern",
     company: "NIELIT",
     position: "Intern",
     duration: "August 2025 – Present",
@@ -132,6 +132,21 @@ export const projects: Project[] = [
     ],
     category: "web",
     link: "https://suzocoservices.in/"
+  },
+  {
+    id: "neepco-chatbot",
+    title: "RAG based Chatbot for NEEPCO's DOP",
+    duration: "July 2024 – August 2025",
+    organization: "Internship Project",
+    description: "A Chabot for answering queries based on the DOP policy",
+    technologies: ["TinyLama1.1b","HuggingFace","ChromaDB","NLP","React", "TypeScript", "Vite", "CSS3", "Git"],
+    highlights: [
+      "An CPU optimzed Chatbot for Answering DOP policies",
+      "Fine-Tuned & Quantized TinyLama1.1b using our Custom Dataset"
+    ],
+    category: "ai-ml",
+    github:"https://github.com/kalpokoch/RAG-based-Chatbot-for-Delegation-of-power-DOP-NEEPCO",
+    link: "https://neepcodop.netlify.app/"
   },
   {
     id: "note-taking-app",
