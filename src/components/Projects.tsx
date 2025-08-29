@@ -69,6 +69,20 @@ const Projects: React.FC = () => {
                   </div>
                 </div>
 
+                
+                {project.github && (
+                  <div className='project-link'>
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-view-link"  
+                    >
+                      <span>View Project</span>
+                    </a>
+                  </div>
+                )}
+
                 {project.link && (
                   <div className='project-link'>
                     <a 
@@ -77,7 +91,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="project-view-link"  
                     >
-                      <span>View Project</span>
+                      <span>Live DEMO</span>
                     </a>
                   </div>
                 )}
